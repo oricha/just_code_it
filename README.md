@@ -1,11 +1,11 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Este es un repo donde se guarda varios ejercicios de entrevistas de varias empresas.
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
+* Ejercicios de Codility, HackerRank y demas
+* Proyectos de code asign
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
@@ -19,9 +19,13 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Contribution guidelines ###
 
-* Writing tests
-* Code review
-* Other guidelines
+* Los ejercicios estan ordenados en primer nvel por lenguaje
+* Los ejercicios pueden estar repetidos en varios lenguajes , de echo recomendamos reescribirlo en otro lenguaje de programacion
+* Ademas de ejercicios hay varios algoritmos y estructura de datos
+
+[Java](https://bitbucket.org/oricha/just_code_it/src/master/java/)
+[Python](https://bitbucket.org/oricha/just_code_it/src/master/python/)
+[Scala](https://bitbucket.org/oricha/just_code_it/src/master/scala/)
 
 ### Who do I talk to? ###
 
