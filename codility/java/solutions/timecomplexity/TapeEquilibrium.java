@@ -10,10 +10,10 @@
 	  A[3] = 4
 	  A[4] = 3
 	We can split this tape in four places:
-	P = 1, difference = |3 − 10| = 7 
-	P = 2, difference = |4 − 9| = 5 
-	P = 3, difference = |6 − 7| = 1 
-	P = 4, difference = |10 − 3| = 7 
+	P = 1, difference = |3 − 10| = 7
+	P = 2, difference = |4 − 9| = 5
+	P = 3, difference = |6 − 7| = 1
+	P = 4, difference = |10 − 3| = 7
 	Write a function:
 	class Solution { public int solution(int[] A); }
 	that, given a non-empty zero-indexed array A of N integers, returns the minimal difference that can be achieved.
@@ -39,21 +39,21 @@ package timecomplexity;
 public class TapeEquilibrium {
 
 	public static void main(String[] args) {
-		int[] A = new int[]{3,1,2,4,3};
-		System.out.println(solution(A));
+		int[] Array = new int[]{3,1,2,4,3};
+		System.out.println(solution(Array));
 	}
-	
+
 	public static int solution(int[] A) {
-		int res = Integer.MAX_VALUE;
-		int tmp=0;
+		int result = Integer.MAX_VALUE;
+		int index=0;
 		int sum = 0;
 		for (int i = 0; i < A.length; i++) {
 			sum += A[i];
 		}
 		for (int i = 0; i < A.length-1; i++) {
-			tmp+=A[i];
-			res = Math.min(res, Math.abs(tmp - (sum - tmp)));
+			index+=A[i];
+			result = Math.min(result, Math.abs(index - (sum - index)));
 		}
-		return res;
-	}	
+		return result;
+	}
 }
