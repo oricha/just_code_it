@@ -45,15 +45,15 @@ public class TapeEquilibrium {
 
 	public static int solution(int[] Array) {
 		int diff = Integer.MAX_VALUE;
-		int index=0;
 		int sum = 0;
-		for (int i = 0; i < Array.length; i++) {
-			sum += Array[i];
-		}
-		for (int i = 0; i < Array.length-1; i++) {
-			index+=Array[i];
-			diff = Math.min(diff, Math.abs(index - (sum - index)));
-		}
+		int index = 0;
+
+		for( int tmp: Array ) sum += tmp;
+
+		for (int tmp : Array){
+		    index += tmp;
+		    diff = Math.min( diff, Math.abs( index - (sum - index)));
+        }
 		return diff;
 	}
 }
