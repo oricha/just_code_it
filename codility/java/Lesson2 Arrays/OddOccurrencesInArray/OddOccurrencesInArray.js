@@ -30,19 +30,13 @@
  * all but one of the values in A occur an even number of times.
  **/
 
+function solution(Array) {
+    let result = 0;
 
-class Solution {
-    public int solution(int[] A) {
-        if(A.length == 0)
-            return 0;
-
-        int unpaired;
-        unpaired = A[0]; // initial
-
-        for(int i=1; i< A.length; i++){
-            unpaired = unpaired ^ A[i]; // xor
-        }
-
-        return unpaired; // return the unpaired value
+    for (let element of Array) {
+        // Apply Bitwise XOR to the current and next element
+        result ^= element
     }
+
+    return result
 }
