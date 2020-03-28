@@ -1,6 +1,7 @@
 /**
- An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index, and the last element of the array is moved to the first place. For example, the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7] (elements are shifted right by one index and 6 is moved to the first place).
-
+ An array A consisting of N integers is given. Rotation of the array means that each element is shifted right by one index,
+ and the last element of the array is moved to the first place. For example,
+ the rotation of array A = [3, 8, 9, 7, 6] is [6, 3, 8, 9, 7] (elements are shifted right by one index and 6 is moved to the first place).
  The goal is to rotate array A K times; that is, each element of A will be shifted to the right K times.
 
  Write a function:
@@ -42,30 +43,22 @@
 import java.util.HashMap;
 import java.util.Set;
 //Not Done
-public class OddOccurrencesInArray {
-    public int solution(int[] A) {
-        HashMap <Integer, Integer> occurrencesMap = new HashMap<Integer, Integer>();
+public class CyclicRotation {
+    public int[] solution(int[] Array, int K) {
 
-        for(int i=0; i<A.length; i++) {
-            if(occurrencesMap.containsKey(A[i])) {
-                int occurrences = occurrencesMap.get(A[i]);
-                occurrences++;
-                occurrencesMap.put(A[i], occurrences); //increment occurrence counter and store it
-            }
-            else {
-                occurrencesMap.put(A[i], 1); //1st occurrences of this value
-            }
+        int[] result = new int[Array.length];
+
+        for (int i = 0; i < result.length; i++) {
+            result[(i + K) % Array.length] = Array[i];
         }
 
-        Set keySet = occurrencesMap.keySet();
-
-        for(int currentKey : keySet) {
-            int occurrences = occurrencesMap.get(currentKey);
-
-            //if occurs odd number of times, we found the unpaired value - no need to continue checking
-            if(occurrences % 2 != 0) return currentKey;
-        }
-        //should never get to here
-        throw new RuntimeException("shouldn't get to here - should've return unpaired value by now");
+        return result;
     }
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(new CyclicRotation().solution(new int[]{7, 2, 8, 3, 5}, 2)));
+
+        System.out.println(Arrays.toString(new CyclicRotation().solution(new int[]{7, 2, 8, 3, 5}, 5)));
+    }
+
 }
