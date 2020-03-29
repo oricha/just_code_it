@@ -6,10 +6,10 @@ Este es un repo donde se guarda varios ejercicios de entrevistas de varias empre
 
 * Ejercicios de Codility, HackerRank y demas
 * Proyectos de code asign
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* [Learn Markdown]  para editar MarkDown(https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
-
+[TODO]
 * Summary of set up
 * Configuration
 * Dependencies
@@ -19,15 +19,18 @@ Este es un repo donde se guarda varios ejercicios de entrevistas de varias empre
 
 ### Contribution guidelines ###
 
-* Los ejercicios estan ordenados en primer nvel por lenguaje
-* Los ejercicios pueden estar repetidos en varios lenguajes , de echo recomendamos reescribirlo en otro lenguaje de programacion
-* Ademas de ejercicios hay varios algoritmos y estructura de datos
+* Los ejercicios estan ordenados en primer plataforma: codility, hackerrank
+* Los ejercicios pueden estar repetidos en varios lenguajes , de echo recomendamos reescribirlo en otro 
+lenguaje de programacion, Por ahora los estoy subienod en Java y JavaScript
+* Ademas de ejercicios, hay varios algoritmos y estructura de datos, tambien proyectos pedidos en entrevistas
 
 [Java](https://bitbucket.org/oricha/just_code_it/src/master/java/)
+
 [Python](https://bitbucket.org/oricha/just_code_it/src/master/python/)
+
 [Scala](https://bitbucket.org/oricha/just_code_it/src/master/scala/)
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
+* Repo owner or admin [oricha@gmail.com](oricha@gmail.com])
 * Other community or team contact
