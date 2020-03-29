@@ -34,3 +34,8 @@ lenguaje de programacion, Por ahora los estoy subienod en Java y JavaScript
 
 * Repo owner or admin [oricha@gmail.com](oricha@gmail.com])
 * Other community or team contact
+
+### Youtube Channels
+
+* [Nick White](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA/featured)
+* [MIT OpenCourseWare  Introduction to Algorithms, Fall 2011](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)

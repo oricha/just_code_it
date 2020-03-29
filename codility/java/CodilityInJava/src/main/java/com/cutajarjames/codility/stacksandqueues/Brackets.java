@@ -8,6 +8,11 @@ import java.util.Stack;
  * This is marked as PAINLESS difficulty
  */
 public class Brackets {
+    public static void main(String[] args) {
+        System.out.println(new Brackets().solution("()[]{}()[]{}"));
+        System.out.println(new Brackets().solution("()]]"));
+    }
+
     public int solution(String S) {
         Stack<Character> stack = new Stack<>();
         for (char c : S.toCharArray()) {
@@ -22,10 +27,5 @@ public class Brackets {
             }
         }
         return stack.isEmpty() ? 1 : 0;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Brackets().solution("()[]{}()[]{}"));
-        System.out.println(new Brackets().solution("()]]"));
     }
 }
