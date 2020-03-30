@@ -19,16 +19,12 @@ Este es un repo donde se guarda varios ejercicios de entrevistas de varias empre
 
 ### Contribution guidelines ###
 
-* Los ejercicios estan ordenados en primer plataforma: codility, hackerrank
+* Los ejercicios estan ordenados en primer plataforma: codility, hackerrank, LeetCode
 * Los ejercicios pueden estar repetidos en varios lenguajes , de echo recomendamos reescribirlo en otro 
 lenguaje de programacion, Por ahora los estoy subienod en Java y JavaScript
 * Ademas de ejercicios, hay varios algoritmos y estructura de datos, tambien proyectos pedidos en entrevistas
 
-[Java](https://bitbucket.org/oricha/just_code_it/src/master/java/)
 
-[Python](https://bitbucket.org/oricha/just_code_it/src/master/python/)
-
-[Scala](https://bitbucket.org/oricha/just_code_it/src/master/scala/)
 
 ### Who do I talk to? ###
 
@@ -37,7 +33,7 @@ lenguaje de programacion, Por ahora los estoy subienod en Java y JavaScript
 
 ### Youtube Channels
 
-* [Nick White](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA/featured)
+* [Nick White](https://www.youtube.com/channel/UC1fLEeYICmo3O9cUsqIi7HA/featured) Canal con muchas soluciones a ejercicios
 * [MIT OpenCourseWare  Introduction to Algorithms, Fall 2011](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 
 
