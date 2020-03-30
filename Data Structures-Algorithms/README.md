@@ -17,3 +17,8 @@ Python Version
 
 C# Version 
 [https://github.com/shree1999/Data-Structures-and-Algorithms](https://github.com/shree1999/Data-Structures-and-Algorithms)
+
+
+Curso del MIT 
+[Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/
+)
