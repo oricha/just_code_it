@@ -44,3 +44,4 @@ lenguaje de programacion, Por ahora los estoy subienod en Java y JavaScript
 ### Tools
 
 * [Pramp](https://www.pramp.com/dashboard) Practicar entrevistas, estructura de datos, arquitectura, FrontEnd
+* [LeetCode](https://leetcode.com/explore/) Ejercicios y retos
