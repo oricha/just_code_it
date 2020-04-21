@@ -30,3 +30,4 @@ lenguaje de programacion, Por ahora los estoy subienod en Java y JavaScript
 * [LeetCode](https://leetcode.com/explore/) Ejercicios y retos , estructura de datos, arquitectura, FrontEnd  
 * LeetCode ->  Top 100 Most Liked & Top Most Asked Questions  
 * [HackerRank](https://www.hackerrank.com/interview/interview-preparation-kit)  Interview Preparation Kit
+* [Preguntas Inversas Entrevistas](https://github.com/viraptor/reverse-interview/blob/master/README.md)
