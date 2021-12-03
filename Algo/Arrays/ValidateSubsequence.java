@@ -7,7 +7,6 @@ import java.util.*;
 //  in the array but that are in the same order as they appear in the array. For
 //  instance, the numbers
 
-
 class Program {
     public static boolean isValidSubsequence(List<Integer> array, List<Integer> sequence) {
         int arrIdx = 0;
