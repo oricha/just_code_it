@@ -1,0 +1,27 @@
+
+
+DFS o Depth First Search
+
+es un algoritmo de búsqueda no informada utilizado para recorrer todos los nodos de un grafo o árbol (teoría de grafos)
+de manera ordenada, pero no uniforme. Su funcionamiento consiste en ir expandiendo todos y cada uno de los nodos que va
+ localizando, de forma recurrente, en un camino concreto. Cuando ya no quedan más nodos que visitar en dicho camino,
+ regresa (Backtracking), de modo que repite el mismo proceso con cada uno de los hermanos del nodo ya procesado.
+
+
+Breadth First Search
+
+es un algoritmo de búsqueda no informada utilizado para recorrer o buscar elementos en un grafo (usado frecuentemente sobre árboles).
+Intuitivamente, se comienza en la raíz (eligiendo algún nodo como elemento raíz en el caso de un grafo) y se exploran todos
+ los vecinos de este nodo. A continuación para cada uno de los vecinos se exploran sus respectivos vecinos adyacentes,
+  y así hasta que se recorra todo el árbol.
+
+Formalmente, BFS es un algoritmo de búsqueda sin información, que expande y examina todos los nodos de un árbol
+ sistemáticamente para buscar una solución. El algoritmo no usa ninguna estrategia heurística.
+
+
+ Tree Traversal
+ Traversal is a process to visit all the nodes of a tree and may print their values too. Because, all nodes are connected via
+  edges (links) we always start from the root (head) node. That is, we cannot randomly access a node in a tree. There are three ways which we use to traverse a tree −
+ In-order Traversal
+ Pre-order Traversal
+ Post-order Traversal
