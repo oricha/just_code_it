@@ -76,6 +76,10 @@ local.properties
 # Annotation Processing
 .apt_generated/
 
+# Ideally, this would be included in the Eclipse .gitignore template, but it seems
+.idea/
+
+
 # Scala IDE specific (Scala & Java development for Eclipse)
 .cache-main
 .scala_dependencies
@@ -217,3 +221,10 @@ cwallet.sso.lck
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
+.idea/just_code_it.iml
+.idea/libraries/KotlinJavaRuntime.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
