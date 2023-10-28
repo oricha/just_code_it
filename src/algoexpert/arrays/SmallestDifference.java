@@ -1,4 +1,4 @@
-package algoexpert.Arrays;
+package algoexpert.arrays;
 
 //Smallest Difference
 //Write a function that takes in two non-empty arrays of integers, finds the pair of numbers (one from each array)

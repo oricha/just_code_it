@@ -1,4 +1,4 @@
-package algoexpert.Arrays;
+package algoexpert.arrays;
 
 //Three Number Sum
 //Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum.
@@ -26,7 +26,7 @@ import java.util.*;
     Sample Output
     [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]*/
 
-class Program {
+public class ThreeNumberSum {
     // O(n^2) time | O(n) space
     public static List<Integer[]> threeNumberSum(int[] array, int targetSum) {
         Arrays.sort(array);

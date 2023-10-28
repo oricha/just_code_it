@@ -5,7 +5,7 @@ package algoexpert.BinaryTrees;
 
 import java.util.*;
 
-class Program {
+class BranchSums {
     // This is the class of the input root. Do not edit it.
     public static class BinaryTree {
         int value;

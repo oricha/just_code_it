@@ -1,4 +1,4 @@
-package algoexpert.Arrays;
+package algoexpert.arrays;
 
 import java.util.*;
 
@@ -16,7 +16,7 @@ and so do the numbers [2, 4]. Note that a single number in an array and the arra
     Sample Output
     true*/
 
-class Program {
+class ValidateSubsequence {
     public static boolean isValidSubsequence(List<Integer> array, List<Integer> sequence) {
         int arrIdx = 0;
         int seqIdx = 0;

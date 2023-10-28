@@ -1,6 +1,4 @@
-package algoexpert.Arrays;
-
-import java.util.*;
+package algoexpert.arrays;
 
 
 /*  Write a function that takes in a non-empty array of distinct integers and an
@@ -14,8 +12,7 @@ import java.util.*;
   target sum.*/
 
 
-
-class Program {
+class TwoNumberSum {
     public static int[] twoNumberSum(int[] array, int targetSum) {
         for (int i = 0; i < array.length - 1; i++){
             int firstNum = array[i];
