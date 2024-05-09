@@ -24,7 +24,7 @@ Important note: the Fibonacci sequence is often defined with its first two numbe
 
  */
 
-class Program {
+class NitFibonacci {
     // O(2^n) time | O(n) space
 
     public static int getNthFib(int n) {

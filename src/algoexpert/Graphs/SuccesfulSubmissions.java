@@ -9,7 +9,7 @@ package algoexpert.Graphs;
 
 import java.util.*;
 
-class Program {
+class SuccessfulSubmissions {
     // Do not edit the class below except
     // for the depthFirstSearch method.
     // Feel free to add new properties

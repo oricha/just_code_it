@@ -15,7 +15,7 @@ package algoexpert.Heaps;
 import java.util.*;
 import java.util.function.BiFunction;
 
-class Program {
+class ContinuousMedian {
 
     static class ContinuousMedianHandler {
         Heap lowers = new Heap(Heap::MAX_HEAP_FUNC, new ArrayList<Integer>());

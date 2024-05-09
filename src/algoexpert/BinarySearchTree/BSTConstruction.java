@@ -1,7 +1,11 @@
-package algoexpert.BinarySearchTree;
 
 
-class BSTFile {
+
+import java.util.*;
+
+//Write a BST class for Binary Search Tree
+
+class BSTConstruction {
     static class BST {
         public int value;
         public BST left;

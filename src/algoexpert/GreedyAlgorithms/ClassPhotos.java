@@ -13,7 +13,7 @@ package algoexpert.GreedyAlgorithms;//It's photo day at the local school, and yo
 
 import java.util.*;
 
-class Program {
+class ClassPhotos {
     // O(nlog(n)) time | O(1) space - where n is the number of students
     public boolean classPhotos(
             ArrayList<Integer> redShirtHeights, ArrayList<Integer> blueShirtHeights) {

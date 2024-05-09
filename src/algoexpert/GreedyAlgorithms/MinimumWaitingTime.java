@@ -19,7 +19,7 @@ package algoexpert.GreedyAlgorithms;
 
 import java.util.*;
 
-class Program {
+class MInimumWaitingTime {
     // O(nlogn) time | O(1) space - where n is the number of queries
     public int minimumWaitingTime(int[] queries) {
         Arrays.sort(queries);

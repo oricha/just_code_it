@@ -7,7 +7,7 @@ import java.util.*;
 //  maximum sum of non-adjacent elements in the array.
 //  If the input array is empty, the function should return
 
-class Program {
+class MaxSubsetNoAdjacent {
     public static int maxSubsetSumNoAdjacent(int[] array) {
 
         if( array.length == 0){

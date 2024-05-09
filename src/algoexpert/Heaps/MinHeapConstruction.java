@@ -12,7 +12,7 @@ package algoexpert.Heaps;//Implement a MinHeap class that supports:
 
 import java.util.*;
 
-class Program {
+class MinHeapConstruction {
 
     static class MinHeap {
         List<Integer> heap = new ArrayList<Integer>();

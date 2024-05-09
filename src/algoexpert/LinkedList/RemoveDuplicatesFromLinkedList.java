@@ -10,7 +10,7 @@ package algoexpert.LinkedList;
 
 
 import java.util.*;
-class Program {
+class RemoveDuplicatesFromLinkedList  {
         // This is an input class. Do not edit.
     public static class LinkedList {
         public int value;

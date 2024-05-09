@@ -2,7 +2,7 @@ package algoexpert.DataStructures;
 
 import java.util.*;
 
-public static class BinaryTree {
+public class BinaryTree {
     int value;
     BinaryTree left;
     BinaryTree right;

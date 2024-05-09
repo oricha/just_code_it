@@ -12,7 +12,7 @@ package algoexpert.DInamicPrograming;
 //If it's impossible to make change for the target amount, return -1.
 
 import java.util.Arrays;
-class Program {
+class MInNumberOfCoinsForChange {
         // O(nd) time | O(n) space
     public static int minNumberOfCoinsForChange(int n, int[] denoms) {
         int[] numOfCoins = new int[n + 1];

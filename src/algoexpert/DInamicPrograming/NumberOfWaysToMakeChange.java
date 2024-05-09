@@ -6,7 +6,7 @@ import java.util.*;
 //for that target amount using the given coin denominations.Note that an unlimited amount of coins is at your disposal.
 
 
-class Program {
+class NUmberOfWaysToMakeChange {
     // O(nd) time | O(n) space
     public static int numberOfWaysToMakeChange(int n, int[] denoms) {
         int[] ways = new int[n + 1];
