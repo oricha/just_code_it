@@ -1,4 +1,4 @@
-package algoexpert.arrays;
+import java.util.*;
 
 
 /*  Write a function that takes in a non-empty array of distinct integers and an
@@ -10,6 +10,7 @@ package algoexpert.arrays;
   Note that the target sum has to be obtained by summing two different integers
   in the array; you can't add a single integer to itself in order to obtain the
   target sum.*/
+
 
 
 class TwoNumberSum {
