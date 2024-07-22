@@ -26,4 +26,15 @@ class SortedSquaredArray {
         return sortedSquares;
     }
 
+    public int[] sortedSquaredArray2(int[] array) {
+        // Write your code here.
+        int[] squaredArray =  new int[array.length];
+        for ( int idx = 0; idx < array.length; idx++){
+            int value = array[idx];
+            squaredArray[idx] =  Math.abs(value * value);
+        }
+        Arrays.sort(squaredArray);
+        return squaredArray;
+    }
+
 }

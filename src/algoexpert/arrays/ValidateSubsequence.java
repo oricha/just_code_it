@@ -28,4 +28,17 @@ class ValidateSubsequence {
         }
         return seqIdx == sequence.size();
     }
+
+    public static boolean isValidSubsequence2(List<Integer> array, List<Integer> sequence) {
+        int sedIdx = 0;
+        for ( int value : array) {
+            if ( sedIdx == sequence.size()) { // if we have already found all the elements in the sequence  then break
+                break;
+            }
+            if ( sequence.get(sedIdx).equals(value)) { // if the value in the array is equal to the value in the sequence
+                sedIdx++;
+            }
+        }
+        return sedIdx == sequence.size();
+    }
 }
