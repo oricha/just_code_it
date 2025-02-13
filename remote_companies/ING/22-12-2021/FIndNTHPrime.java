@@ -1,6 +1,8 @@
 
 
 import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
 
 /*
  Write a JAVA program to find the nth prime number.
@@ -14,36 +16,22 @@ import java.math.*;
 import java.util.regex.*;
 
 public class Solution {
+    public int solution(int[] ranks) {
+        Map<Integer, Integer> rankCount = new HashMap<>();
+        int reportableSoldiers = 0;
 
-    public static int nthPrime(int n) {
-        int candidate, count;
-        for(candidate = 2, count = 0; count < n; ++candidate) {
-            if (isPrime(candidate)) {
-                ++count;
+        // Count occurrences of each rank
+        for (int rank : ranks) {
+            rankCount.put(rank, rankCount.getOrDefault(rank, 0) + 1);
+        }
+
+        // Count soldiers who can report to a superior
+        for (int rank : rankCount.keySet()) {
+            if (rankCount.containsKey(rank + 1)) {
+                reportableSoldiers += rankCount.get(rank);
             }
         }
-        // The candidate has been incremented once after the count reached n
-        return candidate-1;
-    }
-    private static boolean isPrime(int n) {
-        if (n % 2 == 0) return n == 2;
-        if (n % 3 == 0) return n == 3;
 
-        int step = 4, m = (int)Math.sqrt(n) + 1;
-        for(int i = 5; i < m; step = 6-step, i += step) {
-            if (n % i == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int t = in.nextInt();
-        for(int a0 = 0; a0 < t; a0++){
-            int n = in.nextInt();
-            System.out.println(nthPrime( n));
-        }
+        return reportableSoldiers;
     }
 }

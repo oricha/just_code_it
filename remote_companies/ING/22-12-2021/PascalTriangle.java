@@ -12,31 +12,29 @@ import java.io.*;
 
 class Program {
 
-    static int factorial(int n) {
-        int f;
-        for(f = 1; n > 1; n--){
-            f *= n;
-        }
-        return f;
-    }
-    static int ncr(int n,int r) {
-        return factorial(n) / ( factorial(n-r) * factorial(r) );
-    }
+    // Function to generate Pascal's Triangle
+    static void printPascalsTriangle(int n) {
+        int[][] triangle = new int[n][n];
 
-    public static void main(String args[]){
-        System.out.println();
-        int n, i, j;
-        n = 5;
-        for(i = 0; i <= n; i++) {
-            for(j = 0; j <= n-i; j++){
-                System.out.print(" ");
-            }
-            for(j = 0; j <= i; j++){
-                System.out.print(" "+ncr(i, j));
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                if (j == 0 || j == i) {
+                    triangle[i][j] = 1;
+                } else {
+                    triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+                }
+                System.out.print(triangle[i][j] + " ");
             }
             System.out.println();
         }
     }
 
-    for( int i= 4; i < 4)
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int n = scanner.nextInt();
+        scanner.close();
+
+        printPascalsTriangle(n);
+    }
 }

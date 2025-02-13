@@ -1,26 +1,37 @@
+import java.util.HashMap;
+import java.util.Map;
+
+
 public class DiceProblem {
-    public static void main(String args[]){
+    public int solution(int[] A) {
+        int minMoves = Integer.MAX_VALUE;
 
-        int[] A = {3,4,1,2,4,2,3,5,1,2,3,4,6,2,4,1,5,2};
-        int roll_dice;
-        int min_roll = 9999999;
+        // Opposite faces mapping
+        Map<Integer, Integer> opposite = new HashMap<>();
+        opposite.put(1, 6);
+        opposite.put(6, 1);
+        opposite.put(2, 5);
+        opposite.put(5, 2);
+        opposite.put(3, 4);
+        opposite.put(4, 3);
 
-        for (int pip : A) {
-            roll_dice = 0;
-            for (int number : A) {
-                if (pip == number) {
-                    roll_dice += 0;
-                } else if (pip + number == 7) {
-                    roll_dice += 2;
+        // Try making all dice show face `target`
+        for (int target = 1; target <= 6; target++) {
+            int moves = 0;
+
+            for (int die : A) {
+                if (die == target) continue; // No move needed
+
+                if (opposite.get(die) == target) {
+                    moves += 2; // Rotating to opposite side takes two moves
                 } else {
-                    roll_dice += 1;
+                    moves += 1; // Rotating to an adjacent face takes one move
                 }
             }
-            if (roll_dice < min_roll) {
-                min_roll = roll_dice;
-            }
+
+            minMoves = Math.min(minMoves, moves);
         }
 
-        System.out.println("Minimum Flip Count:" + min_roll);
+        return minMoves;
     }
 }
