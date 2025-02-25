@@ -42,7 +42,7 @@ public class BestTimeToSell {
         int min = Integer.MAX_VALUE;
 
         // Initialize the maximum profit to zero, assuming no profit initially.
-        int max = 0;
+        int maxProfit = 0;
 
         // Iterate through each day's stock price.
         for (int i = 0; i < prices.length; i++) {
@@ -52,11 +52,32 @@ public class BestTimeToSell {
 
             // Calculate the potential profit if selling on the current day.
             // Compare it with the previous maximum profit and update if it's higher.
-            max = Math.max(max, prices[i] - min);
+            maxProfit = Math.max(maxProfit, prices[i] - min);
         }
 
         // Return the maximum profit found.
         // If no profit is possible, it returns 0 by default.
-        return max;
+        return maxProfit;
+    }
+
+    /**
+     * Solution
+     * maxProfit = max(maxProfit, prices[i] - min)
+     */
+    public int maxProfit2(int[] prices) {
+        int min = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for (int i = 0; i < prices.length; i++) {
+          min = Math.min(min, prices[i]);
+          maxProfit = Math.max(maxProfit, prices[i] - min)
+        }
+        return maxProfit;
+    }
+
+    public static void main(String[] args) {
+        BestTimeToSell solution = new BestTimeToSell();
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        int maxProfit = solution.maxProfit(prices);
+        System.out.println("Maximum Profit: " + maxProfit); // Output: 5
     }
 }
