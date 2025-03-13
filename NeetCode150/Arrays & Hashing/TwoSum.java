@@ -54,4 +54,22 @@ class TwoSum {
         // If no solution is found, return an empty array.
         return new int[0];
     }
+
 }
+
+/**
+ * Explanation of the Solution:
+ * 	1.	Create a HashMap<Integer, Integer> map to store the numbers and their indices.
+ * 	2.	Iterate through the array of numbers.
+ * 	3.	Calculate the complement needed to reach the target.
+ * 	4.	Check if the complement exists in the HashMap.
+ * 	5.	If found, return the indices of the current number and its complement.
+ * 	6.	Store the current number as the key and its index as the value.
+ * 	7.	If no solution is found, return an empty array.
+ * 	Complexity Analysis:
+ * 	•	Time complexity: O(n), where n is the number of elements in the input array.
+ * 	•	Space complexity: O(n), where n is the number of unique elements in the input array.
+ *  Complexity Analysis:
+ * 	•	Time complexity: O(n), where n is the number of elements in the input array.
+ * 	•	Space complexity: O(n), where n is the number of unique elements in the input array.
+ */

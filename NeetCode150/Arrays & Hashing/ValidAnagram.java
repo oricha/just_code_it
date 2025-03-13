@@ -55,3 +55,16 @@ class ValidAnagram {
         return true;
     }
 }
+
+/**
+ * Explanation of the Solution:
+ * 	1.	Create a HashMap to store character frequencies.
+ * 	2.	Iterate through both strings simultaneously.
+ * 	3.	Increment the count for the character from string 's'.
+ * 	4.	Decrement the count for the character from string 't'.
+ * 	5.	Check if all values in the map are zero.
+ * 	6.	Return true if all counts are zero, indicating an anagram.
+ * 	Complexity Analysis:
+ * 	•	Time complexity: O(n), where n is the length of the input strings.
+ * 	•	Space complexity: O(n), where n is the number of unique characters in the input strings.
+ */
